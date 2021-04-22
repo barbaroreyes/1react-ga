@@ -1,0 +1,23 @@
+.App {
+  border: 3px solid ;
+  width: 250px;
+  height: 650px;
+  text-align: center;
+  background:rgb(31, 19, 19);
+
+}
+.traffic{ 
+
+  
+  width:200px;
+  height:200px;
+  border: 2px solid black;
+  border-radius:50%;
+  margin: auto;
+  margin-top:7px ;
+  text-align: center;
+
+}
+
+
+
