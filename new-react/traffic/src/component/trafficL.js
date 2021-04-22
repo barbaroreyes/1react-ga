@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TrafficL = ({color,colorState,setColorState}) => {
+const TrafficL = ({color,colorState,setColorState,button}) => {
   return (
     <div 
     className='traffic' 
@@ -8,9 +8,13 @@ const TrafficL = ({color,colorState,setColorState}) => {
     :color=== colorState
     ? color 
     :'black'}}
-    onClick={()=>setColorState(color)}
+    // 
     >
-     
+     <button onClick={()=>
+      setColorState(color)} 
+      className='btn'>
+      {button}
+      </button>
     </div>
   )
 }

@@ -1,20 +1,26 @@
 import React ,{useState}from 'react'
 import './App.css'
 import TrafficL from './component/trafficL';
+import dataArray from './component/dataArray'
+
 
 const App = () => {
-  const color = ['red','yellow','green']
-  const [colorState, setColorState]=useState('red')
+  
+  const [colorState, setColorState] = useState(dataArray[0].color)
 
 
   return (
     <div className="App">
-      {color.map((item)=>{
-        return (<TrafficL 
-          color ={item} 
+      {dataArray.map((item,i)=>{
+        return (
+        <TrafficL 
+          key={i}
+          color ={item.color} 
           colorState={colorState}
           setColorState={setColorState}
+          button={item.id}
           />)
+          
       })}
       
     </div>
